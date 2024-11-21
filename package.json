@@ -4,7 +4,7 @@
   "packageManager": "pnpm@9.1.1",
   "type": "module",
   "scripts": {
-    "dev": "node scripts/dev.js",
+    "dev": "node scripts/dev.js --sourcemap --watch",
     "build": "node scripts/build.js",
     "build-dts": "tsc -p tsconfig.build-browser.json && tsc -p tsconfig.build-node.json && rollup -c rollup.dts.config.js",
     "clean": "rimraf packages/*/dist temp .eslintcache",
